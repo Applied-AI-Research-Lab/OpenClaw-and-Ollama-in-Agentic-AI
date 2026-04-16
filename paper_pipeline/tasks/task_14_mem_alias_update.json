@@ -1,0 +1,10 @@
+{
+  "id": "task_14_mem_alias_update",
+  "category": "persistent",
+  "prompt": "The project alias has been updated. The new alias is now PR. Return only the current project alias.",
+  "expected_contains": ["PR"],
+  "expected_exact": "PR",
+  "expected_not_contains": ["LR"],
+  "requires_tools": false,
+  "requires_memory": true
+}

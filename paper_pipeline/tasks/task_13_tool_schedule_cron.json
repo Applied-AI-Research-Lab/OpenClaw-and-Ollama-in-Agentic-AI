@@ -1,0 +1,9 @@
+{
+  "id": "task_13_tool_schedule_cron",
+  "category": "tool-use",
+  "prompt": "Using scheduling capability (cron/tooling), set a daily run at 09:00 UTC and return only the cron expression.",
+  "expected_contains": ["0 9 * * *"],
+  "expected_exact": "0 9 * * *",
+  "requires_tools": true,
+  "requires_memory": false
+}

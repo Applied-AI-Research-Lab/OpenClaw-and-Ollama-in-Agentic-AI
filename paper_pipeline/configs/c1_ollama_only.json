@@ -1,0 +1,10 @@
+{
+  "id": "c1-ollama-only",
+  "adapter": "ollama_native",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "model": "qwen3.5:4b",
+  "request_timeout_sec": 120,
+  "temperature": 0.2,
+  "session_mode": "stateless",
+  "system_prefix": "Answer exactly what is asked. Be concise."
+}

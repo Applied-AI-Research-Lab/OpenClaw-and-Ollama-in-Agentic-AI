@@ -1,0 +1,8 @@
+{
+  "id": "task_09_mem_store_alias",
+  "category": "persistent",
+  "prompt": "Remember this mapping: project alias is LR.",
+  "expected_regex": "LR|memorize|stored|saved|noted|alias|mapping|remembered|acknowledged|done|will do",
+  "requires_tools": false,
+  "requires_memory": true
+}

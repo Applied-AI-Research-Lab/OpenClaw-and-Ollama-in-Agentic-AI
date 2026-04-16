@@ -1,0 +1,8 @@
+{
+  "id": "task_07_mem_store_style",
+  "category": "persistent",
+  "prompt": "Remember this preference: future summaries must be bullet points with no intro.",
+  "expected_regex": "remember|memorize|stored|saved|noted|preference|bullet|understood|got it|acknowledged|done|will do",
+  "requires_tools": false,
+  "requires_memory": true
+}

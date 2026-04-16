@@ -1,0 +1,9 @@
+{
+  "id": "task_04_tool_total_cost",
+  "category": "tool-use",
+  "prompt": "Read /home/ubuntu/openclaw_isolated_server/paper_pipeline/data/tool_data.csv and compute the total cost (sum of qty*price for every row). Return exactly 16.60.",
+  "expected_contains": ["16.60"],
+  "expected_exact": "16.60",
+  "requires_tools": true,
+  "requires_memory": false
+}

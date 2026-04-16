@@ -1,0 +1,8 @@
+{
+  "id": "task_03_reactive_owner",
+  "category": "reactive",
+  "prompt": "From paper_pipeline/data/reactive_notes.md, return only the owner.",
+  "expected_contains": ["K. Roumeliotis"],
+  "requires_tools": false,
+  "requires_memory": false
+}

@@ -1,0 +1,9 @@
+{
+  "id": "task_15_mem_recall_style_desc",
+  "category": "persistent",
+  "prompt": "What formatting preference were you asked to remember for writing summaries? Return only that preference description.",
+  "expected_contains": ["bullet"],
+  "expected_not_contains": ["don't have", "no memory", "no preference", "haven't", "i don't remember", "don't recall", "not stored", "i was not"],
+  "requires_tools": false,
+  "requires_memory": true
+}

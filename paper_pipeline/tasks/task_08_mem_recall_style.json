@@ -1,0 +1,8 @@
+{
+  "id": "task_08_mem_recall_style",
+  "category": "persistent",
+  "prompt": "Using what you remembered, summarize paper_pipeline/data/reactive_notes.md in exactly 2 bullet points.",
+  "expected_contains": ["-", "Lobster Relay"],
+  "requires_tools": false,
+  "requires_memory": true
+}

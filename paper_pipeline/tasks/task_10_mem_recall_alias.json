@@ -1,0 +1,9 @@
+{
+  "id": "task_10_mem_recall_alias",
+  "category": "persistent",
+  "prompt": "What alias did I ask you to remember? Return only the alias.",
+  "expected_contains": ["LR"],
+  "expected_exact": "LR",
+  "requires_tools": false,
+  "requires_memory": true
+}

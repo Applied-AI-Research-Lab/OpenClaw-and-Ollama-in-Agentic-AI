@@ -1,0 +1,11 @@
+{
+  "id": "c2-openclaw-stateless",
+  "adapter": "openclaw_docker_cli",
+  "docker_no_deps": true,
+  "session_mode": "stateless",
+  "system_prefix": "Use runtime capabilities and persistent memory when useful. Do not rely on prior turns.",
+  "forbid_tools": false,
+  "enforce_no_tool_violation": false,
+  "forbid_memory": true,
+  "docker_compose_file": "docker-compose.yml"
+}

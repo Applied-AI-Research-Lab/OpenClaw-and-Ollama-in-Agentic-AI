@@ -1,0 +1,8 @@
+{
+  "id": "task_01_reactive_codename",
+  "category": "reactive",
+  "prompt": "Read paper_pipeline/data/reactive_notes.md and return only the project codename. (Note: the codename is not the same as the project alias.)",
+  "expected_contains": ["Lobster Relay"],
+  "requires_tools": false,
+  "requires_memory": false
+}

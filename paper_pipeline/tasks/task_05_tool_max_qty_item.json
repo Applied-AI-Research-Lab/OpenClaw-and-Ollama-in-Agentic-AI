@@ -1,0 +1,9 @@
+{
+  "id": "task_05_tool_max_qty_item",
+  "category": "tool-use",
+  "prompt": "Read the file at /home/ubuntu/openclaw_isolated_server/paper_pipeline/data/tool_data.csv. The CSV has three columns: item, qty, price. Find the row with the highest qty number and return ONLY that row's item value as a plain English word. Do not return a tool name, tool identifier, file path, or JSON key — only the actual item name from the CSV data.",
+  "expected_contains": ["banana"],
+  "expected_regex": "\\bbanana\\b",
+  "requires_tools": true,
+  "requires_memory": false
+}

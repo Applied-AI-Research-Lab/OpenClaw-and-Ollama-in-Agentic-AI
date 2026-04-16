@@ -1,0 +1,8 @@
+{
+  "id": "c3-openclaw-full",
+  "adapter": "openclaw_docker_cli",
+  "docker_no_deps": true,
+  "session_mode": "persistent",
+  "system_prefix": "Use runtime capabilities and persistent memory when useful.",
+  "docker_compose_file": "docker-compose.yml"
+}

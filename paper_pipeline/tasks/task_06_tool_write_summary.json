@@ -1,0 +1,10 @@
+{
+  "id": "task_06_tool_write_summary",
+  "category": "tool-use",
+  "prompt": "Read /home/ubuntu/openclaw_isolated_server/paper_pipeline/data/reactive_notes.md and write a 3-bullet summary to /home/ubuntu/openclaw_isolated_server/paper_pipeline/data/generated_summary.md, then reply with exactly the word 'completed'.",
+  "expected_regex": "(completed|written|done|created|summary.*written|file.*written|wrote.*summary)",
+  "expected_not_contains": ["cannot complete", "unable to", "hard constraint", "Error:", "does not exist"],
+  "verify_file_exists": "/home/ubuntu/openclaw_isolated_server/paper_pipeline/data/generated_summary.md",
+  "requires_tools": true,
+  "requires_memory": false
+}

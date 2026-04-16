@@ -1,0 +1,10 @@
+{
+  "id": "task_02_reactive_deadline",
+  "category": "reactive",
+  "prompt": "From paper_pipeline/data/reactive_notes.md, output only the deadline in YYYY-MM-DD format.",
+  "expected_contains": ["2026-06-15"],
+  "expected_exact": "2026-06-15",
+  "expected_regex": "^\\d{4}-\\d{2}-\\d{2}$",
+  "requires_tools": false,
+  "requires_memory": false
+}

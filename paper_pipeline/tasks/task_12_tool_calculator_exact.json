@@ -1,0 +1,9 @@
+{
+  "id": "task_12_tool_calculator_exact",
+  "category": "tool-use",
+  "prompt": "Use calculator/tooling to compute (12.5*4) + (3.2*5). Return exactly 66.00",
+  "expected_contains": ["66.00"],
+  "expected_exact": "66.00",
+  "requires_tools": true,
+  "requires_memory": false
+}

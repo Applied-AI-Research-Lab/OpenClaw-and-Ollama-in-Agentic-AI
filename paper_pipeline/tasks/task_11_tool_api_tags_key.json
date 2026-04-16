@@ -1,0 +1,9 @@
+{
+  "id": "task_11_tool_api_tags_key",
+  "category": "tool-use",
+  "prompt": "Call the local Ollama API at http://127.0.0.1:11434/api/tags. If the response JSON has a top-level key named 'models', return only: ok",
+  "expected_contains": ["ok"],
+  "expected_exact": "ok",
+  "requires_tools": true,
+  "requires_memory": false
+}
