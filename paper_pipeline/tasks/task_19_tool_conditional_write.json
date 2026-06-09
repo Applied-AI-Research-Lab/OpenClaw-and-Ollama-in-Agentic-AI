@@ -1,0 +1,12 @@
+{
+  "id": "task_19_tool_conditional_write",
+  "category": "tool-use",
+  "prompt": "Read paper_pipeline/data/tool_data.csv. If any item has a quantity strictly greater than 4, write the single word ALERT to paper_pipeline/data/alert.txt. Otherwise write the single word OK. Return only the single word: done",
+  "expected_contains": ["done"],
+  "expected_not_contains": ["sorry", "cannot", "error"],
+  "verify_file_exists": "paper_pipeline/data/alert.txt",
+  "requires_tools": true,
+  "requires_memory": false,
+  "_note": "tool_data.csv has banana qty=5 which is >4, so the correct write is ALERT. The task verifies both the return value ('done') and the physical existence of alert.txt. C1/C1b cannot write files; C2/C3 can. The verify_file_exists field is checked by the harness scorer.",
+  "_reviewer_link": "R2.1, R2.4 — conditional tool use with side-effect verification tests runtime execution capabilities that LLM-only baselines cannot replicate."
+}

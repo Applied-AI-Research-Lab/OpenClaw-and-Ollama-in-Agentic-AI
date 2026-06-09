@@ -1,0 +1,11 @@
+{
+  "id": "task_20_reactive_cross_ref",
+  "category": "reactive",
+  "prompt": "Read paper_pipeline/data/reactive_notes.md. Return only two pieces of information separated by a forward slash: the owner name and the priority level. Example format: Name/Level",
+  "expected_contains": ["K. Roumeliotis", "High"],
+  "expected_regex": "K\\.\\s*Roumeliotis.{0,20}High|High.{0,20}K\\.\\s*Roumeliotis",
+  "requires_tools": false,
+  "requires_memory": false,
+  "_note": "reactive_notes.md contains: Owner=K. Roumeliotis, Priority=High. Requires reading the file AND correlating two fields from it (multi-hop extraction). C1 gets only an unresolvable path; C1b/C2/C3 receive the file content.",
+  "_reviewer_link": "R2.1, R2.2 — reactive multi-hop extraction distinguishes C1 from C1b and demonstrates that C1 failure was information access, not model capability."
+}

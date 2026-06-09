@@ -1,0 +1,11 @@
+{
+  "id": "task_17_tool_multifile_join",
+  "category": "tool-use",
+  "prompt": "Read paper_pipeline/data/tool_data.csv and paper_pipeline/data/secondary_data.csv. Find every item that appears in BOTH files. For each common item return its name followed by a colon and the SUM of its quantity values from both files. Return one item per line, sorted alphabetically by item name. Return ONLY these lines, nothing else.",
+  "expected_contains": ["apple:10", "coffee:5"],
+  "expected_not_contains": ["mango", "banana"],
+  "requires_tools": true,
+  "requires_memory": false,
+  "_note": "tool_data.csv has apple:3 and coffee:2; secondary_data.csv has apple:7 and coffee:3. Common items: apple (3+7=10), coffee (2+3=5). mango and banana appear in only one file each.",
+  "_reviewer_link": "R2.1 — multi-source reasoning task expands benchmark scope beyond trivially narrow single-file queries."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "c1b-ollama-enriched",
+  "adapter": "ollama_native",
+  "base_url": "http://127.0.0.1:11434/api/chat",
+  "model": "qwen3.5:4b",
+  "temperature": 0.2,
+  "session_mode": "stateless",
+  "enrich_prompts": true,
+  "_note": "Fair LLM-only baseline. Identical to C1 but the harness injects ALL referenced file contents into the prompt regardless of task category. This isolates whether performance gaps stem from missing information (enrichment effect) or from genuine runtime capability (tool execution, memory persistence, orchestration). Must be disclosed as a methodological control in the paper."
+}

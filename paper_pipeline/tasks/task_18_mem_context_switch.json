@@ -1,0 +1,11 @@
+{
+  "id": "task_18_mem_context_switch",
+  "category": "persistent",
+  "prompt": "Unrelated arithmetic question: what is 6 multiplied by 7? Answer the math first, then on the next line state the formatting preference you stored earlier in this session.",
+  "expected_contains": ["42"],
+  "expected_regex": "bullet|formatting|no intro",
+  "requires_tools": false,
+  "requires_memory": true,
+  "_note": "Runs after task_07 stores 'bullet points, no introductory text' preference. Tests that a context-switching prompt (arithmetic) does not disrupt memory persistence in C3. Under C2 (stateless) the formatting preference is unavailable, producing expected_regex failure. Under C3 (persistent) both 42 and the preference are returned.",
+  "_reviewer_link": "R2.1 — tests cross-context memory stability, a property absent from prior benchmarks."
+}
